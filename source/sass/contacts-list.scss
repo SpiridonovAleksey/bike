@@ -43,7 +43,7 @@
 }
 
 .contacts-list__link--email::before {
-  background-image: url("../../img/icon-mail.svg");
+  background-image: url("../img/icon-mail.svg");
 }
 
 .contacts-list__link--phone {
@@ -51,7 +51,7 @@
 }
 
 .contacts-list__link--phone::before {
-  background-image: url("../../img/icon-phone.svg");
+  background-image: url("../img/icon-phone.svg");
 }
 
 @media (max-width: $tablet) {
