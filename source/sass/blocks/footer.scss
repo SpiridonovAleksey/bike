@@ -1,0 +1,39 @@
+
+.footer {
+  box-sizing: border-box;
+  padding-bottom: 100px;
+}
+
+.footer__address {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer__title {
+  font-family: "OpenSans-SemiBold", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: $grey1;
+}
+
+.footer__text {
+  width: 550px;
+  margin: 0 auto 40px auto;
+  font-size: 17px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  color: $grey8;
+}
+
+@media (max-width: $tablet) {
+  .footer__title {
+    font-size: 24px;
+    line-height: 30px;
+    color: $grey1;
+  }
+
+  .footer__text {
+    width: 100%;
+    margin: 0 auto 22px auto;
+  }
+}
