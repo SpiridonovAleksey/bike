@@ -1,0 +1,61 @@
+
+.type-bike {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  background-color: $white5;
+  text-align: center;
+}
+
+.type-bike__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-family: "OpenSans-SemiBold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: -0.5px;
+}
+
+.type-bike__item {
+  margin: 0 15px;
+  //width: 242px;
+  //margin: 0;
+}
+
+.type-bike__item:nth-of-type(2) {
+  margin-top: 30px;
+}
+
+.type-bike__img {
+  width: 300px;
+}
+
+@media (max-width: $less-desktop) and (min-width: $tablet) {
+  .type-bike__item:nth-of-type(2) {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: $tablet) {
+  .type-bike__list {
+    padding: 0 20px;
+  }
+
+  .type-bike__img {
+    width: 200px;
+  }
+
+  .type-bike__item {
+    margin: 0 25px;
+    //width: 242px;
+    //margin: 0;
+  }
+
+  .type-bike__item:nth-of-type(2) {
+    margin-top: 0;
+  }
+}

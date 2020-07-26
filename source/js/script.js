@@ -1,10 +1,12 @@
 'use strict';
 var mainNav = document.querySelector('.main-nav');
 var navButton = document.querySelector('.nav-button');
-
+var videoBike = document.querySelector('.video');
+var videoBtn = document.querySelector('.video__btn')
 
 mainNav.classList.add('main-nav--none');
 navButton.classList.add('nav-button--close');
+videoBike.removeAttribute('controls');
 
 
 navButton.addEventListener('click', function () {
@@ -16,3 +18,12 @@ navButton.addEventListener('click', function () {
     navButton.classList.remove('nav-button--open');
   }
 });
+
+videoBtn.addEventListener('click', function () {
+  videoBtn.classList.add('video__btn--none');
+  videoBike.setAttribute('controls', 'controls');
+  videoBike.play();
+  console.log('ffewfwefewfowef');
+});
+
+
