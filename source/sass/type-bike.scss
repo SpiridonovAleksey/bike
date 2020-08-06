@@ -1,7 +1,7 @@
 
 .type-bike {
   margin: 0 auto;
-  padding: 0;
+  padding: 45px 0 40px 0;
   width: 100%;
   background-color: $white5;
   text-align: center;
@@ -22,8 +22,59 @@
 
 .type-bike__item {
   margin: 0 15px;
-  //width: 242px;
-  //margin: 0;
+  position: relative;
+}
+
+.type-bike__item::before {
+  content: "";
+  position: absolute;
+  z-index: 8;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  border: 27px solid $aqua;
+  border-radius: 50%;
+}
+
+.type-bike__item--road .type-bike__img {
+  position: relative;
+}
+
+.type-bike__item--road::before {
+  width: 180px;
+  height: 180px;
+  top: 25%;
+  left: -60px;
+  z-index: 0;
+}
+
+.type-bike__item--mauntin::before {
+  border-radius: 0;
+  border: 8px solid $aqua;
+  width: 47px;
+  height: 47px;
+  top: -20px;
+  left: -20px;
+}
+
+.type-bike__item--mauntin::after {
+  content: "";
+  position: absolute;
+  width: 47px;
+  height: 47px;
+  z-index: 8;
+  bottom: 60px;
+  right: -20px;
+  box-sizing: border-box;
+  border: 8px solid $aqua;
+}
+
+.type-bike__item--child::before {
+  width: 95px;
+  height: 95px;
+  border: 17px solid $aqua;
+  top: -45px;
+  left: 250px;
 }
 
 .type-bike__item:nth-of-type(2) {
@@ -36,7 +87,11 @@
 
 @media (max-width: $less-desktop) and (min-width: $tablet) {
   .type-bike__item:nth-of-type(2) {
-    margin-top: 0;
+    margin: 10px 25px;
+  }
+
+  .type-bike__item--child {
+    margin-top: 50px;
   }
 }
 
@@ -45,17 +100,53 @@
     padding: 0 20px;
   }
 
+  .type-bike__item:nth-of-type(2) {
+    margin: 10px 25px;
+  }
+
   .type-bike__img {
     width: 200px;
   }
 
   .type-bike__item {
-    margin: 0 25px;
-    //width: 242px;
-    //margin: 0;
+    margin: 10px 25px;
   }
 
-  .type-bike__item:nth-of-type(2) {
+  .type-bike__item--road::before {
+    width: 127px;
+    height: 127px;
+    border: 18px solid $aqua;
+    top: 40%;
+    left: -40px;
+    z-index: 0;
+  }
+
+  .type-bike__item--mauntin::before {
+    content: none;
+  }
+
+  .type-bike__item--mauntin::after {
+    content: none;
+  }
+
+  .type-bike__item--child::before {
+    width: 68px;
+    height: 68px;
+    border: 13px solid $aqua;
+    top: -20px;
+    left: 155px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .type-bike {
+    margin: 0 auto;
+    padding: 35px 0 20px 0;
+  }
+
+  .type-bike__title {
     margin-top: 0;
+    margin-bottom: 35px;
+    line-height: 20px;
   }
 }

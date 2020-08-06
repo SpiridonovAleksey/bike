@@ -44,7 +44,7 @@
 @media (max-width: $tablet) {
   .about-us {
     box-sizing: border-box;
-    padding: 35px 0 130px 0;
+    padding: 35px 0 30px 0;
   }
 
   .about-us__title {
@@ -64,6 +64,11 @@
 }
 
 @media (max-width: $mobile) {
+  .about-us {
+    box-sizing: border-box;
+    padding: 35px 0 0 0;
+  }
+
   .about-us__item {
     padding: 0;
   }
@@ -71,5 +76,6 @@
   .about-us__text {
     font-size: 18px;
     line-height: 34px;
+    margin-top: 7px;
   }
 }

@@ -84,7 +84,37 @@
     max-width: 503px;
   }
 
-  .video {
+  .video__btn {
+    width: 90px;
+    height: 90px;
+    top: calc(50% - 45px);
+    left: calc(50% - 45px);
+  }
+
+  .arrow {
+    margin-left: 6px;
+    border-top: 12px solid transparent;
+    border-left: 17px solid $black;
+    border-bottom: 12px solid transparent;
+  }
+
+    .video {
     min-width: 288px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .video__btn {
+    width: 50px;
+    height: 50px;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+  }
+
+  .arrow {
+    margin-left: 3px;
+    border-top: 7px solid transparent;
+    border-left: 10px solid $black;
+    border-bottom: 7px solid transparent;
   }
 }
