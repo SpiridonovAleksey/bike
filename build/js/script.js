@@ -2,7 +2,7 @@
 var mainNav = document.querySelector('.main-nav');
 var navButton = document.querySelector('.nav-button');
 var videoBike = document.querySelector('.video');
-var videoBtn = document.querySelector('.video__btn')
+var videoBtn = document.querySelector('.video__btn');
 
 mainNav.classList.add('main-nav--none');
 navButton.classList.add('nav-button--close');
@@ -23,13 +23,10 @@ videoBtn.addEventListener('click', function () {
   videoBtn.classList.add('video__btn--none');
   videoBike.setAttribute('controls', 'controls');
   videoBike.play();
-  console.log('ffewfwefewfowef');
 });
 
 var userPhone = document.querySelector('.form__input--phone');
 
-userPhone.addEventListener('invalid', function (evt) {
-  userPhone.setCustomValidity('Введите номер в формате 89123456789')
-})
-
-
+userPhone.addEventListener('invalid', function () {
+  userPhone.setCustomValidity('Введите номер в формате 89123456789');
+});
