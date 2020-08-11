@@ -50,6 +50,8 @@
     "node": "8.15"
   },
   "dependencies": {
-    "del": "^4.1.1"
+    "browserify": "^16.5.2",
+    "del": "^4.1.1",
+    "uglify": "^0.1.5"
   }
 }

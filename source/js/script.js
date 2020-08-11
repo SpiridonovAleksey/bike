@@ -27,6 +27,10 @@ videoBtn.addEventListener('click', function () {
 
 var userPhone = document.querySelector('.form__input--phone');
 
-userPhone.addEventListener('invalid', function () {
-  userPhone.setCustomValidity('Введите номер в формате 89123456789');
+userPhone.addEventListener('input', function (e) {
+  if (!userPhone.value.match(new RegExp(userPhone.getAttribute('pattern')))) {
+    userPhone.setCustomValidity('Введите номер в формате 89123456789');
+  } else {
+    userPhone.setCustomValidity('');
+  }
 });
