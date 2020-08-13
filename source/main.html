@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+  <h1 class="visually-hidden">Магазин велосипедов Moon</h1>
   <header class="header">
     <button type="button" name="Меню" class="nav-button"><span class="nav-button__title visually-hidden">Открыть меню</span> </button>
 
@@ -48,6 +49,7 @@
 
 
       <div class="form-wrap">
+        <h3 class="visually-hidden">Форма обратной связи</h3>
         <form class="header__form form" method="post">
           <p class="form__title">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
 
@@ -66,7 +68,7 @@
 
   <main>
     <section class="about-us" id="about-us">
-      <p class="about-us__title">Несколько фактов о нас</p>
+      <h2 class="about-us__title">Несколько фактов о нас</h2>
       <ul class="about-us__list ul-global">
         <li class="about-us__item">
           <span class="about-us__number">01</span>
@@ -112,9 +114,8 @@
         </li>
         <li class="type-bike__item type-bike__item--child">
           <picture>
-            <source media="(max-width: 768px)"
-                    srcset="./img/child-bike-mobile.webp"
-                    srcset="./img/child-bike-mobile.png">
+            <source media="(max-width: 768px)" srcset="./img/child-bike-mobile.webp">
+            <source media="(max-width: 768px)" srcset="./img/child-bike-mobile.png">
             <source type="image/webp" srcset="./img/child-bike-desktop.webp">
             <img src="./img/child-bike-desktop.png" alt="Детский велосипед" class="type-bike__img">
           </picture>
@@ -126,9 +127,9 @@
     <section class="bike-video" id="bike-video">
       <h2 class="bike-video__title">Видео про велосипеды</h2>
       <p class="bike-video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
-      <div class="video__wrap">
-        <button class="video__btn"><span class="visually-hidden">Воспроизвести видео</span><span class="arrow"></span></button>
-        <video controls width="" height="" poster="./img/preview-video-bike.png" preload="none" class="video">
+      <div class="bike-video__wrap">
+        <button class="bike-video__btn"><span class="visually-hidden">Воспроизвести видео</span><span class="arrow"></span></button>
+        <video controls width="929" height="522" poster="./img/preview-video-bike.png" preload="none" class="video">
           <source src="./video/videoplayback.mp4" type="video/mp4">
           <source src="./video/videoplayback.webm" type="video/webm">
           <source src="./video/videoplayback.ogg" type="video/ogg">
@@ -140,7 +141,7 @@
   <footer class="footer">
 
     <div class="footer__address">
-      <p class="footer__title">Как нас найти?</p>
+      <h2 class="footer__title">Как нас найти?</h2>
       <p class="footer__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
     </div>
 
@@ -151,6 +152,7 @@
     </div>
 
     <div class="contacts-list-wrap" id="contacts">
+    <h2 class="visually-hidden">Наши контакты</h2>
     <ul class="contacts-list ul-global">
       <li class="contacts-list__item">
         <span class="contacts-list__icon contacts-list__icon--email"></span>

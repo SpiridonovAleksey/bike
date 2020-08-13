@@ -21,6 +21,14 @@
   display: flex;
   justify-content: center;
   padding: 0 0 0 0;
+
+  &:hover .contacts-list__link {
+    color: $black;
+  }
+
+  &:active .contacts-list__link {
+    color: $aqua;
+  }
 }
 
 .contacts-list__item--phone {
