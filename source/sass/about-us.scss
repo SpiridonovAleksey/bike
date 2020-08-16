@@ -1,7 +1,7 @@
 
 .about-us {
   box-sizing: border-box;
-  padding: 124px 0 130px 0;
+  padding: 129px 0 130px 0;
 }
 
 .about-us__title {
@@ -21,15 +21,16 @@
 }
 
 .about-us__item {
-  width: 240px;
+  font-family: "OpenSans-Regular", "Arial", sans-serif;;
+  width: 260px;
   box-sizing: border-box;
-  padding: 0 5px;
-  margin: 0;
-  letter-spacing: -1.27273px;
+  padding: 0;
+  margin: 0 20px;
+  letter-spacing: -0.5px;
 }
 
 .about-us__number {
-  font-family: "OpenSans-SemiBold", "Arial", sans-serif;
+  font-family: "OpenSans-Bold", "Arial", sans-serif;
   font-size: 28px;
   line-height: 38px;
   color: $aqua;
@@ -38,7 +39,7 @@
 .about-us__text {
   font-size: 22px;
   line-height: 34px;
-  margin-top: 16px;
+  margin-top: 14px;
 }
 
 @media (max-width: $tablet) {

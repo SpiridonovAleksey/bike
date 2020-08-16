@@ -1,14 +1,20 @@
 
 .type-bike {
   margin: 0 auto;
-  padding: 45px 0 40px 0;
+  padding: 127px 0 127px 0;
   width: 100%;
   background-color: $white5;
   text-align: center;
 }
 
-.type-bike__title {
-  color: red;
+.type-bike__headline {
+  font-family: "OpenSans-Regular",  "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+  padding: 0 8px 0 0;
+  margin-top: 24px;
+  margin-bottom: 59px;
 }
 
 .type-bike__list {
@@ -16,7 +22,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 0 0 23px;
   text-align: center;
   font-family: "OpenSans-SemiBold", "Arial", sans-serif;
   font-size: 18px;
@@ -25,7 +31,9 @@
 }
 
 .type-bike__item {
-  margin: 0 15px;
+  //width: 342px;
+  //height: 512px;
+  margin: 0 25px;
   position: relative;
 }
 
@@ -47,7 +55,7 @@
 .type-bike__item--road::before {
   width: 180px;
   height: 180px;
-  top: 25%;
+  top: 23%;
   left: -60px;
   z-index: 0;
 }
@@ -57,8 +65,8 @@
   border: 8px solid $aqua;
   width: 47px;
   height: 47px;
-  top: -20px;
-  left: -20px;
+  top: -18px;
+  left: -19px;
 }
 
 .type-bike__item--mauntin::after {
@@ -67,8 +75,8 @@
   width: 47px;
   height: 47px;
   z-index: 8;
-  bottom: 60px;
-  right: -20px;
+  bottom: 53px;
+  right: -23px;
   box-sizing: border-box;
   border: 8px solid $aqua;
 }
@@ -77,16 +85,23 @@
   width: 95px;
   height: 95px;
   border: 17px solid $aqua;
-  top: -45px;
-  left: 250px;
+  top: -35px;
+  left: 283px;
 }
 
 .type-bike__item:nth-of-type(2) {
-  margin-top: 30px;
+  margin-top: 29px;
 }
 
 .type-bike__img {
-  width: 300px;
+  width: 342px;
+}
+
+.type-bike__title {
+  font-family: "OpenSans-SemiBold",  "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 34px;
+  margin-top: 10px;
 }
 
 @media (max-width: $less-desktop) and (min-width: $tablet) {
