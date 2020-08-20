@@ -18,6 +18,8 @@
 }
 
 .footer__text {
+  font-family: "OpenSans-Regular", "Arial", sans-serif;
+  //letter-spacing: -0.005em;
   width: 550px;
   margin: 0 auto 40px auto;
   font-size: 17px;
@@ -27,14 +29,39 @@
 }
 
 @media (max-width: $tablet) {
+  .footer {
+    padding-top: 135px;
+  }
+
   .footer__title {
     font-size: 24px;
     line-height: 30px;
     color: $grey1;
+    margin-bottom: 21px;
   }
 
   .footer__text {
     width: 100%;
-    margin: 0 auto 22px auto;
+    margin: 0 auto 18px auto;
+  }
+}
+
+@media (max-width: $mobile) {
+  .footer {
+    padding-top: 104px;
+  }
+
+  .footer__title {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .footer__text {
+    font-size: 17px;
+    line-height: 31px;
+    letter-spacing: 0;
+    box-sizing: border-box;
+    padding: 0 30px;
   }
 }

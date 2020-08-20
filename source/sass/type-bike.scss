@@ -12,7 +12,7 @@
   font-size: 30px;
   line-height: 30px;
   letter-spacing: 0.6px;
-  padding: 0 8px 0 0;
+  padding: 0;
   margin-top: 24px;
   margin-bottom: 59px;
 }
@@ -115,28 +115,39 @@
 }
 
 @media (max-width: $tablet) {
+  .type-bike {
+    padding: 25px 0 30px 0;
+  }
+
+  .type-bike__headline {
+    font-size: 24px;
+    line-height: 41px;
+    margin-top: 24px;
+    margin-bottom: 20px;
+  }
+
   .type-bike__list {
     padding: 0 20px;
   }
 
   .type-bike__item:nth-of-type(2) {
-    margin: 10px 25px;
+    margin: 10px 25px 18px 25px;
   }
 
   .type-bike__img {
-    width: 200px;
+    width: 270px;
   }
 
   .type-bike__item {
-    margin: 10px 25px;
+    margin: 10px 25px 18px 25px;
   }
 
   .type-bike__item--road::before {
     width: 127px;
     height: 127px;
     border: 18px solid $aqua;
-    top: 40%;
-    left: -40px;
+    top: 54%;
+    left: -37px;
     z-index: 0;
   }
 
@@ -153,19 +164,20 @@
     height: 68px;
     border: 13px solid $aqua;
     top: -20px;
-    left: 155px;
+    left: 227px;
   }
 }
 
 @media (max-width: $mobile) {
   .type-bike {
     margin: 0 auto;
-    padding: 35px 0 20px 0;
+    padding: 26px 0 22px 0;
   }
 
   .type-bike__title {
     margin-top: 0;
-    margin-bottom: 35px;
+    margin-top: 18px;
+    margin-bottom: 20px;
     line-height: 20px;
   }
 }

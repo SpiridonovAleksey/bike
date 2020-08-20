@@ -66,18 +66,43 @@
 
 @media (max-width: $tablet) {
   .contacts-list {
-    margin: 22px auto;
+    margin: 18px auto;
     flex-wrap: wrap;
     box-sizing: border-box;
     width: 100%;
-    padding: 0 10px;
+    padding: 0 75px;
+    justify-content: space-between;
   }
 
   .contacts-list__item {
     width: auto;
+    //margin: 0 27px;
+  }
+
+  .contacts-list__item--email {
+    //margin-left: 0;
   }
 
   .contacts-list__item--phone {
     padding-left: 0;
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .contacts-list {
+    margin-top: 19px;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .contacts-list__item {
+    margin-top: 8px;
+    margin-bottom: 7px;
+  }
+
+  .contacts-list__item--phone {
+    padding-left: 0;
+    margin-right: 18px;
   }
 }

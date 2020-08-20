@@ -16,7 +16,7 @@
   line-height: 30px;
   letter-spacing: -0.005em;
   margin-bottom: 20px;
-  padding: 0 10px 0 0;
+  padding: 0;
 }
 
 .bike-video__text {
@@ -85,11 +85,13 @@
 
 @media (max-width: $tablet) {
   .bike-video {
-    padding: 40px 16px 40px 16px;
+    padding: 50px 16px 0 16px;
+    height: 413px;
   }
 
   .bike-video__wrap {
     max-width: 503px;
+    top: 40px;
   }
 
   .bike-video__title {
@@ -127,21 +129,36 @@
 }
 
 @media (max-width: $mobile) {
+  .bike-video {
+    //padding: 50px 16px 0 16px;
+    padding-top: 64px;
+    height: 384px;
+  }
+
+  //.bike-video {
+  //  padding-top: 64px;
+  //}
+
+  .bike-video__wrap {
+    max-width: 503px;
+    top: 53px;
+  }
+
   .bike-video__text {
     width: 100%;
   }
 
   .bike-video__btn {
-    width: 50px;
-    height: 50px;
-    top: calc(50% - 25px);
-    left: calc(50% - 25px);
+    width: 65px;
+    height: 65px;
+    top: calc(50% - 32px);
+    left: calc(50% - 32px);
   }
 
   .arrow {
     margin-left: 3px;
-    border-top: 7px solid transparent;
-    border-left: 10px solid $black;
-    border-bottom: 7px solid transparent;
+    border-top: 9px solid transparent;
+    border-left: 13px solid $black;
+    border-bottom: 9px solid transparent;
   }
 }
