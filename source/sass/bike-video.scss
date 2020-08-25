@@ -67,9 +67,6 @@
   width: 0;
   height: 0;
   margin-left: 3px;
-  //border-top: 7px solid transparent;
-  //border-left: 10px solid $black;
-  //border-bottom: 7px solid transparent;
   border-top: 9px solid transparent;
   border-left: 13px solid $black;
   border-bottom: 9px solid transparent;
@@ -119,6 +116,7 @@
 
   .video {
     min-width: 288px;
+    max-height: 282px;
   }
 }
 
@@ -130,14 +128,9 @@
 
 @media (max-width: $mobile) {
   .bike-video {
-    //padding: 50px 16px 0 16px;
     padding-top: 64px;
     height: 384px;
   }
-
-  //.bike-video {
-  //  padding-top: 64px;
-  //}
 
   .bike-video__wrap {
     max-width: 503px;
