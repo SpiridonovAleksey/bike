@@ -42,7 +42,7 @@
     display: block;
     box-sizing: border-box;
     position: absolute;
-    z-index: 2;
+    z-index: 10;
     top: 0;
     right: 0;
     width: 50px;
@@ -69,7 +69,7 @@
   .nav-button--open {
     display: block;
     box-sizing: border-box;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 50px;
@@ -114,8 +114,10 @@
   .main-nav {
     background-color: $white;
     color: black;
-    position: absolute;
-    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 9;
   }
 
   .main-nav--none {
